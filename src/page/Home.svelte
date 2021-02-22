@@ -20,7 +20,7 @@
 </script>
 
 <svelte:head>
-    <title>Revista Me</title>
+    <title>Svelte JS</title>
 
     <!-- seo -->
     <!-- generico -->
