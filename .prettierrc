@@ -1,0 +1,30 @@
+{
+	"svelteSortOrder": "options-scripts-markup-styles",
+	"svelteStrictMode": true,
+	"svelteBracketNewLine": false,
+	"svelteAllowShorthand": true,
+	"svelteIndentScriptAndStyle": true,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"printWidth": 120,
+	"proseWrap": "always",
+	"tabWidth": 4,
+	"useTabs": true,
+	"bracketSpacing": true,
+	"semi": true,
+	"arrowParens": "avoid",
+	"overrides": [
+		{
+			"files": [".prettierrc", ".eslintrc", ".babelrc", ".tern-project", ".stylelintrc", ".lighthouserc"],
+			"options": {
+				"parser": "json"
+			}
+		},
+		{
+			"files": ["package.json"],
+			"options": {
+				"printWidth": 180
+			}
+		}
+	]
+}

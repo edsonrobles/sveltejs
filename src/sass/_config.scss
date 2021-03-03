@@ -1,22 +1,22 @@
 @function rem($px, $base: 16px) {
-    @return $px / $base * 1rem;
+	@return $px / $base * 1rem;
 }
 
 $breakpoints: (
-    small: rem(320px),
-    medium: rem(640px),
-    large: rem(1024px),
-    extra-large: rem(1440px),
+	small: rem(320px),
+	medium: rem(640px),
+	large: rem(1024px),
+	extra-large: rem(1440px),
 );
 
 @mixin mediaquery($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-            @content;
-        }
-    } @else if type-of($breakpoint) == number and unit ($breakpoint) == 'px' {
-        @media screen and (max-width: $breakpoint) {
-            @content;
-        }
-    }
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} @else if type-of($breakpoint) == number and unit ($breakpoint) == 'px' {
+		@media screen and (max-width: $breakpoint) {
+			@content;
+		}
+	}
 }
