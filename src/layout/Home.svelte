@@ -1,4 +1,4 @@
-<script context="module">
+<script>
     import Component from '../components/Component.svelte';
 </script>
 
