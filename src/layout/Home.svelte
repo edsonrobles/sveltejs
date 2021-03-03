@@ -1,8 +1,8 @@
 <script context="module">
-    import Components from '../components/Components.svelte';
+    import Component from '../components/Component.svelte';
 </script>
 
-<Components name={'World'} />
+<Component name={'World'} />
 
 <style>
     
